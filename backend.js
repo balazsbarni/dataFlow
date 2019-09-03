@@ -20,6 +20,13 @@ app.get('/', function(req, res) {
     res.sendFile('/index.html');  
 });
 
+app.get('/insert', function(req, res) {
+    connection.query(`INSERT INTO car(id, type, owner_id) VALUES('123', 'TRABI', '12')`);
+    connection.query(`INSERT INTO car(id, type, owner_id) VALUES('1234', 'opel', '123')`);
+    connection.query(`INSERT INTO car(id, type, owner_id) VALUES('1235', 'MAZDA', '112')`);
+    res.send('ok')
+});
+
 app.get('/cars' ,function(req, res) {
     connection.query('SELECT type FROM car;', function(error, result) {
         if(error) {
