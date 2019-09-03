@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i && node backend.js"
+    "start": "node backend.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,6 @@
     "xmlhttprequest": "^1.8.0"
   },
   "engines": {
-    "node": "11.0.0",
-    "npm": "6.7.0"
+    "node": "11.0.0"
   }
 }
